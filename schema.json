@@ -1,0 +1,16 @@
+{
+	"fde_users": {
+		"date": {
+			"type": "text", 
+			"default": "NULL"
+		},
+		"username": {
+			"type": "text",
+			"default": "NULL"
+		},
+		"uuid": {
+			"default": "NULL", 
+			"type": "text"
+		}
+	}
+}

@@ -33,7 +33,7 @@ logging_enabled = False
 # Set datastore directory
 DATASTORE = argv[1]
 
-#@run_every_60
+@run_every_60
 class AnalyzeFullDiskEncryption(object):
     """ AnalyzeFullDiskEncryption """
 

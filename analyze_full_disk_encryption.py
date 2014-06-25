@@ -2,10 +2,8 @@
 """
 This is a Titan module
 
-- Analyze Installed Applications 
-  keeps dibs on when applications
-  are installed and their install 
-  source
+- Analyze Users Enabled 
+  for Full Disk Encryption
 
 To use:
 
@@ -25,7 +23,7 @@ from titantools import plist
 from time import time, gmtime, strftime
 from os.path import dirname,basename,isfile
 from os import chmod
-from titantools.decorators import run_every_60
+#from titantools.decorators import run_every_60
 
 # Set Logging Status
 logging_enabled = False
@@ -33,7 +31,7 @@ logging_enabled = False
 # Set datastore directory
 DATASTORE = argv[1]
 
-@run_every_60
+#@run_every_60
 class AnalyzeFullDiskEncryption(object):
     """ AnalyzeFullDiskEncryption """
 
@@ -54,7 +52,7 @@ class AnalyzeFullDiskEncryption(object):
 
         self.datastore.append({
           "date": exec_date,
-          "username": userdata[0],
+          "name": userdata[0],
           "uuid": userdata[1]
           }) 
 

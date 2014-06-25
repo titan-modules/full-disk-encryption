@@ -4,7 +4,7 @@
 			"type": "text", 
 			"default": "NULL"
 		},
-		"username": {
+		"name": {
 			"type": "text",
 			"default": "NULL"
 		},
